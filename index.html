@@ -421,13 +421,13 @@ body
    width: 100%;
 }
 }
-#Layer1
+#Services
 {
    background-color: transparent;
    border-radius: 0px;
    margin: 0;
 }
-#Layer1-overlay
+#Services-overlay
 {
    position: absolute;
    top: 0;
@@ -437,7 +437,7 @@ body
    background-color: #000000;
    opacity: 0.5;
 }
-#Layer1-video
+#Services-video
 {
    background: #000000;
    position: absolute;
@@ -448,7 +448,7 @@ body
    overflow: hidden;
    z-index: -99;
 }
-#Layer1-video video
+#Services-video video
 {
    object-fit: cover;
    position: absolute;
@@ -1940,10 +1940,10 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#about').offset().top-50 }, 600, 'easeInQuad');
    });
-   $("a[href*='#Layer1']").click(function(event)
+   $("a[href*='#Services']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'easeOutQuad');
+      $('html, body').stop().animate({ scrollTop: $('#Services').offset().top }, 600, 'easeOutQuad');
    });
    $("a[href*='#contact']").click(function(event)
    {
@@ -2001,10 +2001,10 @@ $(document).ready(function()
    $(window).on('resize', function()
    {
       ResponsiveVideo('intro-video');
-      ResponsiveVideo('Layer1-video');
+      ResponsiveVideo('Services-video');
    });
    ResponsiveVideo('intro-video');
-   ResponsiveVideo('Layer1-video');
+   ResponsiveVideo('Services-video');
 });
 </script>
 <style>
@@ -2053,11 +2053,10 @@ $(document).ready(function()
 <div class="col-2">
 <nav id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:2;vertical-align:top;">
 <ul id="Breadcrumb1">
-<li><a href="">Наші послуги</a></li>
-<li><a href="">Наші ціни</a></li>
+<li class="active" aria-current="page">Про нас</li>
+<li class="active" aria-current="page">Послуги</li>
+<li class="active" aria-current="page">Наші ціни</li>
 <li><a href="./Sertyficat.html">Сертифікати</a></li>
-<li><a href="./BASIC.html">Послуги</a></li>
-<li><a href="./page1.html">Про нас</a></li>
 <li><a href="./Contacts.html">Контакти</a></li>
 </ul>
 
@@ -2152,11 +2151,11 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Layer1" style="position:relative;text-align:center;width:100%;height:100%;float:left;display:block;z-index:40;">
-<div id="Layer1-video"><video src="https://videos.pexels.com/video-files/6750892/6750892-hd_1280_720_25fps.mp4" autoplay loop muted playsinline></video>
+<div id="Services" style="position:relative;text-align:center;width:100%;height:100%;float:left;display:block;z-index:40;">
+<div id="Services-video"><video src="https://videos.pexels.com/video-files/6750892/6750892-hd_1280_720_25fps.mp4" autoplay loop muted playsinline></video>
 </div>
-<div id="Layer1-overlay"></div>
-<div id="Layer1_Container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="Services-overlay"></div>
+<div id="Services_Container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Heading2" style="position:absolute;left:340px;top:273px;width:618px;height:57px;z-index:17;">
 <h1 id="Heading2">ДОПОМОГАЄМО ПРИ:</h1></div>
 
