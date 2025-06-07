@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="uk">
+<html>
 <head>
 <meta charset="utf-8">
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-div#container
+html, body, #container
 {
-   width: 1280px;
-   position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
+   width: 100%;
+   height: 100%;
 }
 body
 {
@@ -22,104 +20,13 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
+   padding: 0;
 }
-#wb_LayoutGrid1
+</style>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<style>
+@media only screen and (max-width: 969px)
 {
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1280px;
-}
-#LayoutGrid1
-{
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   padding: 5px 0 5px 0;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2, #LayoutGrid1 > .col-3
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 0px;
-   padding-left: 0px;
-   position: relative;
-}
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2, #LayoutGrid1 > .col-3
-{
-   flex: 0 0 auto;
-}
-#LayoutGrid1 > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 16.66666667%;
-   max-width: 16.66666667%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-#LayoutGrid1 > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 58.33333333%;
-   max-width: 58.33333333%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-#LayoutGrid1 > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2, #LayoutGrid1 > .col-3
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
-}
 }
 #wb_ResponsiveMenu1
 {
@@ -132,8 +39,8 @@ body
 }
 #ResponsiveMenu1
 {
-   background-color: rgba(68,114,196,0.05);
-   height: 45px;
+   background-color: #0080FF;
+   height: 69px;
 }
 #wb_ResponsiveMenu1 ul
 {
@@ -158,12 +65,12 @@ body
 }
 #wb_ResponsiveMenu1 ul li i
 {
-   font-size: 0px;
-   width: 0px;
+   font-size: 24px;
+   width: 24px;
 }
 #wb_ResponsiveMenu1 ul li a
 {
-   background-color: rgba(68,114,196,0.05);
+   background-color: #0080FF;
    color: #FFFFFF;
    font-family: Arial;
    font-weight: normal;
@@ -175,7 +82,7 @@ body
 }
 #wb_ResponsiveMenu1 > ul > li > a 
 {
-   height: 15px;
+   height: 39px;
 }
 .ResponsiveMenu1 a 
 {
@@ -183,14 +90,14 @@ body
 }
 #wb_ResponsiveMenu1 li:hover > a, #wb_ResponsiveMenu1 li .active
 {
-   background-color: #CCCCCC;
+   background-color: #FFFFFF;
    color: #424242;
 }
 #wb_ResponsiveMenu1 ul ul
 {
    display: none;
    position: absolute;
-   top: 45px;
+   top: 69px;
 }
 #wb_ResponsiveMenu1 ul li:hover > ul
 {
@@ -200,7 +107,7 @@ body
 {
    float: none;
    position: relative;
-   width: 103px;
+   width: 135px;
 }
 #wb_ResponsiveMenu1 ul ul li a
 {
@@ -215,7 +122,7 @@ body
 }
 #wb_ResponsiveMenu1 ul ul li i 
 {
-   margin-right: 0px;
+   margin-right: 8px;
    vertical-align: middle;
 }
 #wb_ResponsiveMenu1 ul ul li a 
@@ -228,9 +135,9 @@ body
 }
 #wb_ResponsiveMenu1 ul ul ul li 
 {
-   left: 103px;
+   left: 135px;
    position: relative;
-   top: -45px;
+   top: -69px;
 }
 #wb_ResponsiveMenu1 .arrow-down 
 {
@@ -303,17 +210,17 @@ body
 #wb_ResponsiveMenu1 .toggle 
 {
    display: block;
-   background-color: rgba(68,114,196,0.05);
+   background-color: #0080FF;
    color: #FFFFFF;
    padding: 0 20px 0 20px;
-   line-height: 30px;
+   line-height: 54px;
    text-decoration: none;
    border: none;
    position: relative;
 }
 #wb_ResponsiveMenu1 .toggle:hover
 {
-   background-color: #CCCCCC;
+   background-color: #FFFFFF;
    color: #424242;
 }
 [id^=ResponsiveMenu1-submenu]:checked + ul 
@@ -322,8 +229,8 @@ body
 }
 #ResponsiveMenu1-title
 {
-   height: 45px !important;
-   line-height: 45px !important;
+   height: 69px !important;
+   line-height: 69px !important;
    text-align: center;
 }
 #wb_ResponsiveMenu1 ul li 
@@ -363,7 +270,7 @@ body
 }
 #wb_ResponsiveMenu1 ul li i 
 {
-   margin-right: 0px;
+   margin-right: 8px;
 }
 #wb_ResponsiveMenu1 ul ul 
 {
@@ -389,7 +296,7 @@ body
    display: block;
    position: absolute;
    left: 30px;
-   top: 10px;
+   top: 22px;
 }
 #ResponsiveMenu1-icon span 
 {
@@ -422,6 +329,88 @@ body
    border-top-color: #424242;
 }
 }
+#wb_LayoutGrid1
+{
+   clear: both;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #0080FF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 10px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 50%;
+   text-align: center;
+}
+#LayoutGrid1 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 50%;
+   text-align: left;
+}
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
 #wb_Text1 
 {
    background-color: transparent;
@@ -429,16 +418,16 @@ body
    border: 0px solid #000000;
    border-radius: 0px;
    padding: 0;
-   margin: 0;
+   margin: 10px 0 0 0 ;
    text-align: center;
 }
 #wb_Text1
 {
-   color: #000000;
-   font-family: Arial;
+   color: #FFFFFF;
+   font-family: "Courier New";
    font-weight: 400;
-   font-size: 24px;
-   line-height: 27.5px;
+   font-size: 13px;
+   line-height: 16px;
 }
 #wb_Text1 p, #wb_Text1 ul
 {
@@ -448,130 +437,278 @@ body
 #wb_Text1
 {
    display: block;
-   margin: 0;
+   margin: 10px 0 0 0 ;
    box-sizing: border-box;
    width: 100%;
 }
-#wb_Image1
+#wb_LayoutGrid2
 {
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url('images/istockphoto%2d1001279256%2d1024x1024_cleanup.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-position: 50% 0;
+   background-size: cover;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
    margin: 0;
-   vertical-align: top;
 }
-#Image1
+#LayoutGrid2
 {
+   box-sizing: border-box;
+   padding: 300px 15px 300px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
    padding: 0;
+   text-align: center;
+}
+#Heading1
+{
+   color: #FFFFFF;
+   font-family: Impact;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 37px;
+   margin: 0;
+   text-align: center;
+}
+#wb_ResponsiveMenu1
+{
+   display: inline-block;
+   width: 455px;
+   height: 69px;
+   z-index: 0;
+}
+#wb_Heading1
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 2;
+}
+@media only screen and (max-width: 969px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_ResponsiveMenu1
+{
+   width: 290px;
+   height: 69px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   text-align: left;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid1
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   height: auto;
+   padding: 10px 15px 10px 15px;
+}
+#LayoutGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid1 > .row > .col-1
+{
    display: block;
    width: 100%;
-   height: auto;
-   max-width: 50px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
-#wb_Text2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
+   border: 0px solid #FFFFFF;
    border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: left;
+   text-align: center;
 }
-#wb_Text2 div
+#LayoutGrid1 > .row > .col-2
 {
-   text-align: left;
-}
-#wb_Image2
-{
-   vertical-align: top;
-}
-#Image2
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
+   display: block;
    width: 100%;
-   height: 100%;
-}
-#wb_Text3 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
+   border: 0px solid #FFFFFF;
    border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: justify;
-}
-#wb_Text3 div
-{
-   text-align: justify;
-}
-#wb_Text4 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
    text-align: left;
 }
-#wb_Text4 div
+#wb_Text1
 {
-   text-align: left;
+   visibility: visible;
+   display: block;
+}
+#wb_Text1
+{
+   font-family: "Courier New";
+   font-weight: 400;
+   font-size: 13px;
+   margin: 10px 0 0 0 ;
+   padding: 0;
+   text-align: center;
+   line-height: 15px;
+}
+#wb_LayoutGrid2
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid2
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   height: auto;
+   padding: 300px 15px 300px 15px;
+}
+#LayoutGrid2 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: center;
+}
+#wb_Heading1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
 }
 </style>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wb.parallax.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
-   {
-      $("#wb_ResponsiveMenu1 input").prop("checked", false);
-   });
+   $('#wb_LayoutGrid2').parallax();
 });
 </script>
 </head>
 <body>
-<div id="container">
-<div id="wb_Text2" style="position:absolute;left:590px;top:100px;width:350px;height:30px;z-index:3;">
-<span style="color:#000000;font-family:Arial;font-size:27px;"><strong>Абонемент ПЛАТИНОВИЙ</strong></span></div>
-<div id="wb_Image2" style="position:absolute;left:120px;top:100px;width:210px;height:315px;z-index:4;">
-<img src="images/ChatGPT%20Image%203%20&#1080;&#1102;&#1085;.%202025%20&#1075;.%2c%2013_57_31%20%281%29.png" id="Image2" alt="" width="210" height="315"></div>
-<div id="wb_Text3" style="position:absolute;left:400px;top:140px;width:760px;height:119px;text-align:justify;z-index:5;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Найкраща пропозиція для справжніх поціновувачів масажу. Якщо Ви просто любите масаж і постійно відвідуєте нашу студію – дуже рекомендуємо даний вид абонементу.<br>Комплекс з 20 масажів – це не лише найкращий результат від масажних процедур, але й позитивні емоції та враження, години релаксу та тиші, здорове та красиве тіло.<br>Подаруйте собі чи своїм близьким найкращий подарунок, який вони по-справжньому оцінять!<br>Рекомендуємо відвідувати нашу студію 3-4 рази на тиждень для максимального результату.<br>Абонемент PLATINUM можна придбати зі знижкою 15% при депозитній оплаті.<br>Абонементи діють 3 місяці з дати придбання.</span></div>
-<div id="wb_Text4" style="position:absolute;left:400px;top:300px;width:227px;height:45px;z-index:6;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">20 &#1084;&#1072;&#1089;&#1072;&#1078;&#1110;&#1074;<br>10000 &#8212; 20000 &#1075;&#1088;&#1085;<br>&#1047;&#1085;&#1080;&#1078;&#1082;&#1072; 20% &#1087;&#1088;&#1080; &#1082;&#1091;&#1087;&#1110;&#1074;&#1083;&#1110; &#1072;&#1073;&#1086;&#1085;&#1077;&#1084;&#1077;&#1085;&#1090;&#1091;</span></div>
-</div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
+<div class="row">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:0;">
-<img src="images/Logo%401%2d1920x911_02.png" id="Image1" alt="" width="213" height="207">
-</div>
-</div>
-<div class="col-2">
-<nav id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:1;">
+<nav id="wb_ResponsiveMenu1">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-<li role="menuitem"><a href="./page3.html" class="nav-link">Головна</a></li>
-<li role="menuitem"><a href="./page1.html" class="nav-link">Послуги</a></li>
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-book fa-2x">&nbsp;</i><br>Blog</a></li>
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-gear fa-2x">&nbsp;</i><br>Work</a></li>
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-user fa-2x">&nbsp;</i><br>About</a></li>
 </ul>
 
 </nav>
 </div>
-<div class="col-3">
+<div class="col-2">
 <div id="wb_Text1">
-<p>+38 050 111 22 33</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Heading</h1>
+</div>
 </div>
 </div>
 </div>
